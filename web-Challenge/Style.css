@@ -1,0 +1,27 @@
+body {
+  background-color: #ededed;
+}
+
+.content {
+  background-color: white;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.image-grid .image {
+  width: 50%;
+}
+
+.image-grid img {
+  width: calc(100% - (20px * 2));
+  margin: 20px;
+}
+
+.image-grid .image h3,
+.content h1 {
+  color: #0bada6;
+}

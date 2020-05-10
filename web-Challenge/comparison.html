@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comparison</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      body {
+        background-color: #ededed;
+      }
+
+      .content {
+        background-color: white;
+      }
+
+      .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      .image-grid .image {
+        width: 50%;
+      }
+
+      .image-grid img {
+        width: calc(100% - (20px * 2));
+        margin: 20px;
+      }
+
+      .image-grid .image h3,
+      .content h1 {
+        color: #0bada6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#" style="color: white; font-size: 25px; background-color: #0bada6;">Latitude</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Page-1.html">Max Temperature</a></li>
+              <li><a href="Page-2.html">Humidity</a></li>
+              <li><a href="Page-3.html">Cloudiness</a></li>
+              <li><a href="Page-4.html">Windspeed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container content">
+      <h1><strong>Comparison: Latitude vs X</strong></h1>
+      <br />
+      <hr />
+
+      <!-- IMAGE GRID -->
+      <div class="image-grid">
+        <div class="image">
+          <h3><strong>vs. Max Temperature</strong></h3>
+          <a href="Page-1.html">
+            <img src="assets/images/Fig1.png" />
+          </a>
+        </div>
+        <div class="image">
+          <h3><strong>vs. Humidity</strong></h3>
+          <a href="Page-2.html">
+            <img src="assets/images/Fig2.png" />
+          </a>
+        </div>
+        <div class="image">
+          <h3><strong>vs. Cloudiness</strong></h3>
+          <a href="Page-3.html">
+            <img src="assets/images/Fig3.png" />
+          </a>
+        </div>
+        <div class="image">
+          <h3><strong>vs. Wind Speed</strong></h3>
+          <a href="Page-4.html">
+            <img src="assets/images/Fig4.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
